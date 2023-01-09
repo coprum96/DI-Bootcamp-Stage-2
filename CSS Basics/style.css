@@ -1,0 +1,38 @@
+body {
+    background: beige
+}
+h1 {
+    color: red;
+    border: 5px solid black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.green {
+    border: 3px solid black;
+    background-color: green;
+    color: black;
+    padding: 20px;
+    
+}
+
+img {
+    width: 120px;
+    height: 60px;
+    padding: 15px;
+    display: block;
+}
+ 
+.st {
+    background-color: pink;
+    color: white;
+}
+.style {
+    color: blue;
+}
+
+.stm {
+background-color: aqua;
+padding: 20px;
+}
