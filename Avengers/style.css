@@ -1,0 +1,30 @@
+body {
+    background-image: url(https://user-images.githubusercontent.com/30896388/168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 600%;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-top: 40%;
+    padding-left: 10px;
+
+}
+
+p {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+
+.left {
+    width: 50%;
+    height: 200px;
+    padding: 30px;
+    display: inline-block;
+}
