@@ -1,0 +1,93 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .div1 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .div2 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 2 / 1 / 2 / 2; }
+    .div3 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 4 / 1 / 5 / 2; }
+    .div4 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 5 / 1 / 6 / 2; }
+    .div5 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 3 / 2 / 4 / 3; }
+    .div6 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 3 / 3 / 4 / 4; }
+    .div7 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 3 / 4 / 4 / 5; }
+    .div8 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 3 / 5 / 4 / 6; }
+    .div9 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 1 / 6 / 2 / 7; }
+    .div10 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 2 / 6 / 3 / 7; }
+    .div11 { line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;
+        grid-area: 4 / 6 / 5 / 7; }
+    .div12 { 
+        line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        background-color: blue;grid-area: 5 / 6 / 6 / 7; }
