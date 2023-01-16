@@ -1,0 +1,85 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  font-size: 23px;
+
+}
+.col {
+  top: 87%;
+  left: 91%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  
+ 
+  
+}
+.btn {
+  background-color: orange;
+  border-radius: 30px;
+  border: 1px solid orange;
+  font-size: 30px;
+  
+}
+
+@media screen and (min-width: 768px) {
+  body { 
+     font-size: 25px; 
+  }
+}
+
+@media screen and (min-width: 600px)and (max-width: 768px){
+  body { 
+     font-size: 35px; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .btn {
+
+  color: black;
+  font-size: small;
+}
+} 
+
+@media screen and (min-width: 480px)and (max-width: 1200px){
+ .btn {
+
+  color: black;
+  font-size: smaller;
+}
+} 
+
+@media screen and (min-width: 992px) {
+ .btn {
+  color: white;
+}
+} 
+
+@media screen and (min-width: 1200px) {
+ .navbar {
+  background-color: black;
+  color: white;
+  
+}
+} 
+
+@media screen and (min-width: 992px) {
+h2 {
+ float:left;
+}
+}
