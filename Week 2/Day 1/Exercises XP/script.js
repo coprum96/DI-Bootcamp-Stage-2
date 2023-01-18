@@ -48,8 +48,7 @@ console.log('I watched ' + myWatchedSeriesLength + ' series: ' + myWatchedSeries
 
 const index = myWatchedSeries.indexOf('the big bang theory');
 myWatchedSeries.splice(index, 1, 'friends');
-
-
+myWatchedSeries.shift()
 myWatchedSeries.push('lost')
 
 console.log('I watched ' + myWatchedSeriesLength + ' series: '+ myWatchedSeries)
@@ -77,11 +76,89 @@ let a = 34;
 let b = 21;
 
 console.log(a+b) //first expression
-// Prediction:
-// Actual:
+// Prediction: It will output 55, because 34 and 21 are numbers
+// Actual: 55
 
 a = 2;
 
 console.log(a+b) //second expression
+// Prediction: It will output 23, because 2 and 21 are numbers
+// Actual:23
+
+// What will be the outcome of a + b in the first expression ? 55
+
+// What will be the outcome of a + b in the second expression ? 23
+// What is the value of c? undifined
+
+console.log(3 + 4 + '5'); // 75
+
+
+// Exercise 5 : Guess The Answers #2
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+typeof(15)
+// Prediction: "number"
+// Actual: 55
+
+typeof(5.5)
+// Prediction: "number"
+// Actual: 55
+
+typeof(NaN)
+// Prediction: "number"
+// Actual: 0
+
+typeof("hello")
+// Prediction: "string"
+// Actual: hello
+
+typeof(true)
+// Prediction: boolean
+// Actual: true
+
+typeof(1 != 2)
+// Prediction: boolean
+// Actual: false
+
+"hamburger" + "s"
 // Prediction:
-// Actual:
+// Actual: hamburgers
+
+"hamburgers" - "s"
+// Prediction:
+// Actual: s
+
+"1" + "3"
+// Prediction: numbers
+// Actual: 4
+
+"1" - "3"
+// Prediction: numbers
+// Actual: -2
+
+"johnny" + 5
+// Prediction: 
+// Actual: johnny5
+
+"johnny" - 5
+// Prediction:
+// Actual: NaN
+
+99 * "hello"
+// Prediction:
+// Actual: NaN
+
+1 != 1
+// Prediction:
+// Actual: false
+
+1 == "1"
+// Prediction:
+// Actual: true
+
+1 === "1"
+// Prediction:
+// Actual: true
