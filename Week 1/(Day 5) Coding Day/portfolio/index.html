@@ -1,29 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="zone blue sticky">
-        <ul class="main-nav">
-          <li><a href="">About</a>
-        </li>
-          <li><a href="">Education</a></li>
-              <img src="stas.jpg.jpg" alt="stas">
-              <span>
-                  <h2>
-                    Hi, i'm
-                  </h2>
-                    <h1>Stanislav Medyanik</h1>
-                    </span>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">Contacts</a></li>
-        </ul>
-  </nav>
+  <!-- navbar -->
+<nav class="navbar">
+  <ul class="link-group">
+      <li class="link active"><a href="#">home</a></li>
+      <li class="link"><a href="#">projects</a></li>
+      <li class="link"><a href="#">about</a></li>
+      <li class="link"><a href="#">contact</a></li>
+  </ul>
+</nav>
+
+<!-- home section -->
+
+<section class="home-section active">
+  <h1 class="hero-heading">hello, i am <br> Stanislav</h1>
+  <img src="stas.jpg.jpg" class="home-img" alt="">
+</section>
+
+<!-- project section -->
+<section class="project-section active">
+  <h1 class="project-heading">some of my projects</h1>
+  <div class="project-container">
+      <div class="project-card">
+          <img src="imgddd" class="project-img" alt="">
+          <div class="project-content">
+              <h1 class="project-title">project 01</h1>
+              <p class="project-info">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+              </p>
+              <div class="project-btn-grp">
+                  <button class="project-btn github">github repo</button>
+                  <button class="project-btn live">see live</button>
+              </div>
+          </div>
+      </div>
+      // +3 more cards
+  </div>
+</section>
+
+<!-- about section -->
+<section class="about-section active">
+  <div class="about">
+      <div class="about-img-container">
+          <img src="img/home.png" class="about-img" alt="">
+          <button class="download-cv-btn">downlaod cv</button>
+      </div>
+      <p class="about-info">Lorem ipsum.....</p>
+  </div>
+</section>
+
+<!-- skills -->
+<div class="skill-section">
+  <h1 class="heading">skills</h1>
+  <div class="skills-container">
+      <div class="skill-card">
+          <img src="img/html.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name">HTML</h1>
+          <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+      </div>
+      // +4 more cards
+  </div>
+</div>
 
 
-  <footer class="zone yellow">zero => mastery</footer> -->
 </body>
 </html>
