@@ -62,6 +62,26 @@ console.log('I watched ' + myWatchedSeriesLength + ' series: '+ myWatchedSeries)
 // Hint : Should you create another variable to hold the temperature in fahrenheit? (ie. point 2)
 // Hint: To convert a temperature from celsius to fahrenheit : Divide it by 5, then multiply it by 9, then add 32
 
-let celsiusTemperatur = 20
+let celsiusTemperatur = 18
 let fahrenheitTemperatur = (celsiusTemperatur / 5) * 9 + 32
-console.log(fahrenheitTemperatur)
+console.log('The Temperatur in Tel-Aviv is ' + fahrenheitTemperatur + 'fahrenheit')
+
+// Exercise 4 : Guess The Answers #1
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+let c;
+let a = 34;
+let b = 21;
+
+console.log(a+b) //first expression
+// Prediction:
+// Actual:
+
+a = 2;
+
+console.log(a+b) //second expression
+// Prediction:
+// Actual:
