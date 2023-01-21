@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     background: linear-gradient(3deg, #e6d16c, #16014c);
     font-family: 'Permanent Marker', cursive;
+
 }
 
 .navbar{
@@ -212,7 +213,7 @@ button {
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
-    color: #1a1a1a;
+    /* color: #1a1a1a; */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 8px transparent;

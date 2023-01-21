@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .pencil {
+        position: relative;
+        width: 50px;
+        height: 200px;
+        margin: 50px auto;
+        animation: spin 5s linear infinite;
+      }
+
+      .pencil-body {
+        position: absolute;
+        width: 30px;
+        height: 150px;
+        background: #9c5017;
+        border-radius: 10px 10px 70px 70px;
+        left: 20px;
+        top: 25px;
+      }
+
+      .pencil-eraser {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: rgb(255, 255, 255);
+        left: 0;
+        top: 130px;
+        border-radius: 20%;
+      }
+
+      .pencil-lead {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: rgb(202, 13, 13);
+        border-radius: 60%;
+        left: 25px;
+        top: 155px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pencil">
+      <div class="pencil-body"></div>
+      <div class="pencil-eraser"></div>
+      <div class="pencil-lead"></div>
+    </div>
+  </body>
+</html>
