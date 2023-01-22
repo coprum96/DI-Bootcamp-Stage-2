@@ -3,10 +3,17 @@
 let sentence = ["my"," favorite"," color"," is"," blue"];
 console.log(sentence.join(''))
 
-let firstWord = 'Script'
-let secondWord = 'Java'
+// Exercise 2
+// Create 2 variables. The values should be strings. For example:
+
+let firstWord = 'Java'
+let secondWord = 'Script'
+firstWord = firstWord.slice(0, 3) + secondWord.slice(2);
+secondWord = secondWord.slice(0, 1) + firstWord.slice(2);
+let thirdWord = ' '
 
 console.log(firstWord + secondWord)
+console.log(firstWord + thirdWord + secondWord)
 
 // Exercise 3 
 // Make a Calculator. Follow the instructions:
@@ -34,3 +41,5 @@ alert("The multiply of " + num1 + " and " + num2 + " is " + multiply);
 
 let divide = num1 / num2;
 alert("The divide of " + num1 + " and " + num2 + " is " + divide);
+
+
