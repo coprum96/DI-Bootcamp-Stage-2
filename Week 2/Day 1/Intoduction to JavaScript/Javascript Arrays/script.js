@@ -16,6 +16,7 @@ console.log('i will be ' + (myFutureYear - myBirthdayYear) + ' in ' + myFutureYe
 
 // Exercise 3
 let pets = ['cat', 'dog', 'fish','rabbit','cow']
+const secondPet =pets[1];
 console.log(pets[1])
 
 pets.push('horse');
