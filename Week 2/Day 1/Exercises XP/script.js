@@ -47,7 +47,7 @@ console.log('I watched ' + myWatchedSeriesLength + ' series: ' + myWatchedSeries
 // Change the series “the big bang theory” to “friends”
 
 const index = myWatchedSeries.indexOf('the big bang theory');
-myWatchedSeries.splice(index, 1, 'friends');
+myWatchedSeries[3] = 'friends';
 myWatchedSeries.shift()
 myWatchedSeries.push('lost')
 

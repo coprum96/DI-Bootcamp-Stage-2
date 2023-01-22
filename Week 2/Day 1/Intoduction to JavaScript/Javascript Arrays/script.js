@@ -16,13 +16,11 @@ console.log('i will be ' + (myFutureYear - myBirthdayYear) + ' in ' + myFutureYe
 
 // Exercise 3
 let pets = ['cat', 'dog', 'fish','rabbit','cow']
+console.log(pets[1])
 
-pets.push('horse')
-pets.slice(3)
+pets.push('horse');
+pets.splice(3, 1);
+console.log(pets)
 
-let rabbitIndex = pets.indexOf('rabbit');
-if(rabbitIndex !== -1){
-    pets.splice(rabbitIndex,1);
-}
 let petsLenght = pets.length
 console.log(pets + ' ' + petsLenght)

@@ -28,7 +28,7 @@ console.log(firstWord + thirdWord + secondWord)
 
 
 let num1 = parseFloat(prompt("Enter the first number: "));
-console.log(typeof num1);
+
 let num2 = parseFloat(prompt("Enter the second number: "));
 let sum = num1 + num2;
 alert("The sum of " + num1 + " and " + num2 + " is " + sum);
