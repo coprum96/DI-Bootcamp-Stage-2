@@ -121,47 +121,47 @@ typeof(true)
 
 typeof(1 != 2)
 // Prediction: boolean
-// Actual: false
+// Actual: boolean
 
 "hamburger" + "s"
-// Prediction:
+// Prediction: two strings
 // Actual: hamburgers
 
 "hamburgers" - "s"
-// Prediction:
-// Actual: s
+// Prediction: wa can't do such operation
+// Actual: Nan
 
 "1" + "3"
-// Prediction: numbers
-// Actual: 4
+// Prediction: strings
+// Actual: 12
 
 "1" - "3"
-// Prediction: numbers
+// Prediction: 2 numbers
 // Actual: -2
 
 "johnny" + 5
-// Prediction: 
+// Prediction: string with number
 // Actual: johnny5
 
 "johnny" - 5
-// Prediction:
+// Prediction: we can't do such operation
 // Actual: NaN
 
 99 * "hello"
-// Prediction:
+// Prediction: we can't do such operation
 // Actual: NaN
 
 1 != 1
-// Prediction:
+// Prediction: != is means no true
 // Actual: false
 
 1 == "1"
-// Prediction:
+// Prediction: == means true
 // Actual: true
 
 1 === "1"
-// Prediction:
-// Actual: true
+// Prediction: different numbers
+// Actual: false
 
 // Exercise 4
 // For each expression, predict what you think the output will be in a comment (//) without first running the command.
@@ -169,57 +169,57 @@ typeof(1 != 2)
 // Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
 5 + "34"
-// Prediction:
+// Prediction: numbers
 // Actual: 534
 
 5 - "4"
-// Prediction:
+// Prediction: numbers
 // Actual: 1
 
 10 % 5
-// Prediction:
+// Prediction: 0 without interger reminder
 // Actual:0
 
 5 % 10
-// Prediction:
+// Prediction: 0.5 will the interger reminder
 // Actual: 5
 
 "Java" + "Script"
-// Prediction:
-// Actual: Java Script
+// Prediction: 2 strings
+// Actual: JavaScript
 
 " " + " "
-// Prediction:
+// Prediction: 2 string with empty space
 // Actual: '   '
 
 " " + 0
-// Prediction:
+// Prediction: empty space plus zero
 // Actual: ' 0 '
 
 true + true
-// Prediction:
+// Prediction: 1+1
 // Actual: 2
 
 true + false
-// Prediction:
+// Prediction: 1+0=1
 // Actual: 1
 
 false + true
-// Prediction:
-// Actual:
-
-false - true
-// Prediction:
+// Prediction: 0+1=1
 // Actual: 1
 
+false - true
+// Prediction: 0-1=-1
+// Actual: -1
+
 !true
-// Prediction:
+// Prediction: no true
 // Actual: false
 
 3 - 4
-// Prediction:
+// Prediction: 3-4=-1
 // Actual: -1
 
 "Bob" - "bill"
-// Prediction:
+// Prediction: two strings
 // Actual: NaN

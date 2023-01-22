@@ -53,8 +53,21 @@ if (nemoIndex === -1) {
 let number = prompt('give spontane number');
 
 
-if (numberIndex > 2) {
-    console.log('boom');
-  } else if(numberIndex <= 2) {
+if (number < 2) {
+    console,log('boom');
+  } if (numberIndex <= 2) {
     console.log('boooom');
-  }
+  } else {
+    let boom = "B" + "o".repeat(num-1) + "m";
+    // if (num % 2 == 0) {
+    //     if (num % 5 == 0) {
+    //         console.log(boom.toUpperCase() + "!");
+    //     } else {
+    //         console.log(boom + "!");
+    //     }
+    // } else if (num % 5 == 0) {
+    //     console.log(boom.toUpperCase());
+    // } else {
+    //     console.log(boom);
+    // }
+}
