@@ -162,3 +162,64 @@ typeof(1 != 2)
 1 === "1"
 // Prediction:
 // Actual: true
+
+// Exercise 4
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+5 + "34"
+// Prediction:
+// Actual: 534
+
+5 - "4"
+// Prediction:
+// Actual: 1
+
+10 % 5
+// Prediction:
+// Actual:0
+
+5 % 10
+// Prediction:
+// Actual: 5
+
+"Java" + "Script"
+// Prediction:
+// Actual: Java Script
+
+" " + " "
+// Prediction:
+// Actual: '   '
+
+" " + 0
+// Prediction:
+// Actual: ' 0 '
+
+true + true
+// Prediction:
+// Actual: 2
+
+true + false
+// Prediction:
+// Actual: 1
+
+false + true
+// Prediction:
+// Actual:
+
+false - true
+// Prediction:
+// Actual: 1
+
+!true
+// Prediction:
+// Actual: false
+
+3 - 4
+// Prediction:
+// Actual: -1
+
+"Bob" - "bill"
+// Prediction:
+// Actual: NaN
