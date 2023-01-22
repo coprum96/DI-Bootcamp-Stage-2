@@ -38,7 +38,7 @@ let nemoIndex = sentence.indexOf("Nemo");
 if (nemoIndex === -1) {
   console.log("I can't find Nemo");
 } else {
-  console.log(`I found Nemo at ${nemoIndex}`);
+  console.log('I found Nemo at ' + nemoIndex);
 }
 
 // Exercise 4
