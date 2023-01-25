@@ -5,15 +5,16 @@
 
 
 // // Fisrt Example
-// const stars = '*'
-// for (let i = 1; i <= 4; i++) {
-//     console.log(stars[i]); 
+
+// for (let x = 1; x <= 4; x++) {
+//     console.log('*', repeat (x)); 
 //   }
 
 // Second Example (Right Examples)
 let star = ''
   for (let i = 0; i < 6; i++) {
-  star = star + " * "
+  star = star + " * " 
   console.log(star)
   }
+
 
