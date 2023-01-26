@@ -158,8 +158,11 @@ console.log(myBill())
 // The function should return true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50 which is bigger than 4.25 (the total amount due)
 
 function changeEnough(itemPrice, amountOfChange) {
-    let itemPrice = 
+    
 }
+
+changeEnough(4.25, [25, 20, 5, 0])
+
 
 // Exercise 6 : Vacations Costs
 // Instructions
@@ -192,7 +195,7 @@ hotelCost()
 
 function planeRideCost() {
     while (true) {
-        var destination = prompt("Please enter your destination: ");
+        var destination = prompt(" your destination: ");
         if (typeof destination === "string") {
             break;
         }
@@ -206,12 +209,33 @@ function planeRideCost() {
     }
 }
 
+
+
 // Define a function called rentalCarCost().
 // It should ask the user for the number of days they would like to rent the car.
 // If the user doesn’t answer or if the answer is not a number, ask again.
 // Calculate the cost to rent the car. The car costs $40 everyday.
 // If the user rents a car for more than 10 days, they get a 5% discount.
 // The function should return the total price of the car rental.
+
+function rentalCarCost() {
+    while (true) {
+        let carForDays = prompt('How long do you want have car?'); 
+        if (carForDays === 0){
+            alert("Please enter a valid number of days.");
+        } else {
+            break;
+        }
+    }
+    let cost = carForDays * 40
+    if (carForDays > 10) {
+        cost = cost - (cost*0.05);
+    }
+    return cost
+}
+const result = rentalCarCost()
+console.log('car rental ' + result);
+
 
 // Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
 // Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.
