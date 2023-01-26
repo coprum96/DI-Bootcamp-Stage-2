@@ -64,4 +64,4 @@ for (let i = 0; i < gradesList.lenght; i++)
 total += gradesList[i]
 }
 let avg = total / gradesList.lenght
-console.log(avg)
+findAvg()
