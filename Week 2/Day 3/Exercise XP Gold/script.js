@@ -68,9 +68,7 @@ for (number of numbers) {
 }
 
 console.log(sum); 
-
-
-console.log(numbers.max(numbers))
+console.log(numbers[4])
 
 
 // for (i=0;i<=numbers.length;i++)
