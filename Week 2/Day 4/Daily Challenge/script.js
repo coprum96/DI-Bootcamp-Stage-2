@@ -34,9 +34,10 @@ let sentence = prompt(`Please, enter several words (separated by commas and spac
 sentence = sentence.split(", ");
 console.log(sentence);
 let longest = 0;
-for (let i of sentence) {
- if (i.length>longest){
-    longest = i.length;
+let arr = ['hello', 'my friends' , 'by']
+for (let word of sentence) {
+ if (word.length>longest){
+    longest = word.length;
     continue;
  }
 }
@@ -54,3 +55,24 @@ for (let i = -1; i <= sentence.length; i++){
         continue
     } 
 }
+
+// example 3
+let sentence = prompt(`Please, enter several words (separated by commas)`);
+if (!sentence) {
+  console.log("You didn't enter any words.")
+  return
+}
+let words = sentence.split(",");
+let longest = 0;
+
+for (let word of words) {
+  if (word.length > longest) {
+    longest = word.length;
+  }
+}
+
+console.log("*".repeat(longest + 4));
+for (let word of words) {
+  console.log(`* ${word}${" ".repeat(longest - word.length)} *`);
+}
+console.log("*".repeat(longest + 4));
