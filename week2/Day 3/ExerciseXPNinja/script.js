@@ -59,9 +59,6 @@ console.log('The person with the best BMI is: ' + bestBMI)
 
 
 function findAvg(gradesList) {
-let total = 0
-for (let i = 0; i < gradesList.lenght; i++)
-total += gradesList[i]
+    return gradesList;
 }
-let avg = total / gradesList.lenght
 findAvg()
