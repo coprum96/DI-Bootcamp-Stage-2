@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+}
+.faded {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header.startup {
+  background-position: center;
+  background-image: url('header.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+header.startup hr {
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+header.startup h1 {
+  font-size: 2rem;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: bisque;
+  border-color:black ;
+}
+.btn-primary:hover  {
+  background-color: blue;
+  background-color: brown;
+}
