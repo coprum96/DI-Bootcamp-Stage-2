@@ -11,33 +11,29 @@
 // Be careful, each planet has a certain amount of moons. How should you display them?
 // Should you still use an array for the planets ? Or an array of objects ?
 
-const planets = [
-  { name: "Mercury", color: "gray", moons: [] }, 
-  { name: "Venus", color: "yellow", moons: [] }, 
-  { name: "Earth", color: "blue", moons: ["Moon"] }, 
-  { name: "Mars", color: "red", moons: ["Phobos", "Deimos"] }, 
-  { name: "Jupiter", color: "orange", moons: ["Io", "Europa", "Ganymede", "Callisto"] }, 
-  { name: "Saturn", color: "tan", moons: ["Titan", "Rhea", "Iapetus"] }, 
-  { name: "Uranus", color: "light-blue", moons: ["Ariel", "Umbriel", "Titania", "Oberon"] }, 
-  { name: "Neptune", color: "dark-blue", moons: ["Triton", "Proteus", "Nereid"] }
+const solarSystem = [
+  { name: "Mercury", color: "gray", moons: 0 },
+  { name: "Venus", color: "yellow", moons: 0 },
+  { name: "Earth", color: "blue", moons: 1 },
+  { name: "Mars", color: "red", moons: 2 },
+  { name: "Jupiter", color: "brown", moons: 79 },
+  { name: "Saturn", color: "khaki", moons: 82 },
+  { name: "Uranus", color: "cyan", moons: 27 },
+  { name: "Neptune", color: "blue", moons: 14 }
 ];
 
-const container = document.getElementById("listPlanets");
+const section = document.querySelector(".listPlanets");
 
-for (let i = 0; i < planets.length; i++) {
-const planetDiv = document.createElement("div");
-planetDiv.classList.add("planet", planets[i].color);
-planetDiv.innerHTML = planets[i].name;
-container.appendChild(planetDiv);
+solarSystem.forEach(planet => {
+  const planetDiv = document.createElement("div");
+  planetDiv.classList.add("planet");
+  planetDiv.style.backgroundColor = planet.color;
+  planetDiv.innerHTML = planet.name;
+  section.appendChild(planetDiv);
 
-const moonsContainer = document.createElement("div");
-moonsContainer.classList.add("moons-container");
-planetDiv.appendChild(moonsContainer);
-
-for (let j = 0; j < planets[i].moons.length; j++) {
-  const moonDiv = document.createElement("div");
-  moonDiv.classList.add("moon");
-  moonDiv.innerHTML = planets[i].moons[j];
-  moonsContainer.appendChild(moonDiv);
-}
-}
+  for (let i = 0; i < planet.moons; i++) {
+    const moonDiv = document.createElement("div");
+    moonDiv.classList.add("moon");
+    planetDiv.appendChild(moonDiv);
+  }
+});
