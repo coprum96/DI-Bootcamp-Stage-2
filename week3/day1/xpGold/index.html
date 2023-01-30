@@ -53,7 +53,8 @@
   <script>
     let table = document.body.firstElementChild;
     for (let i = 0; i < table.rows.length; i++) {
-    td = table.rows[i].cells[i].style.backgroundColor = 'blue';
+    let td = table.rows[i].cells[i]
+    td.style.backgroundColor = 'blue';
 }
   </script>
 </body>
