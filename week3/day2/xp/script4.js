@@ -5,7 +5,6 @@ const radiusInput = document.querySelector('#radius');
 const volumeOutput = document.querySelector('#volume');
 const submitButton = document.getElementById('submit');
 
-
 submitButton.addEventListener('click', calculateOfValue)
 
 function calculateOfValue(event) {
