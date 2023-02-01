@@ -1,0 +1,57 @@
+body {
+    background-color: gray;
+    display: block;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.colors {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 100vh;
+    width: 20%;
+    float: left;
+    background-color: darkgrey;
+    padding: 5px;
+
+}
+
+.colors > * {
+    border: 2px solid rgb(182, 107, 107);
+    border-radius: 50%;
+}
+
+button  {
+    grid-column: 1/4;
+    background-color: rgb(14, 1, 1);
+    border: none;
+    border-radius: 0%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(40, 5fr);
+    height: 100vh;
+    padding: 5px 5px 5px 0;
+}
+
+#main > * {
+    border: 1px lightgray solid;
+    background-color: white;
+}

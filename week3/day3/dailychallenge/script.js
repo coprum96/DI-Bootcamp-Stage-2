@@ -12,10 +12,10 @@
 const lettersInput = document.querySelector("#letterInput");
 
 
-lettersInput.addEventListener("keyup", onlyAlphabet)
+lettersInput.addEventListener("input", onlyAlphabet)
 
 
 function onlyAlphabet(event) {
-    event.target.value = event.target.value.replace(/[^a-zA-Z]/g, "");
+    event.target.value = event.target.value.replace(/[^a-zA-Z]/g), '';
   }
   
