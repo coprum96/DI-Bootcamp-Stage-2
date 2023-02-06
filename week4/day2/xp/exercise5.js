@@ -37,18 +37,29 @@ makeJuice("medium");
 function makeJuice(size) {
     const ingredients = []
 
-
     function addIngredients(firstIngredient, secondIngredient, thirdIngredient) {
-        const div = document.createElement('div')
-        const body = document.body
-        ingredients.forEach(elem => console.log(`The client wants a ${size} juice, containing ${firstIngredient}, ${secondIngredient}, ${thirdIngredient}.`))
+        ingredients.push(`${firstIngredient}, ${secondIngredient}, ${thirdIngredient}`);
+        const div = document.createElement('div');
+        const body = document.body;
         div.innerText = (`The client wants a ${size} juice, containing ${firstIngredient}, ${secondIngredient}, ${thirdIngredient}.`);
-        body.appendChild(div)
-      }
+        body.appendChild(div);
+    }
+  
+    function displayJuice() {
+        ingredients.forEach(ingredient => {
+            const div = document.createElement('div');
+            const body = document.body;
+            div.innerText = (`The client wants a ${size} juice, containing ${ingredient}.`);
+            body.appendChild(div);
+        });
+    }
   
     addIngredients("apple", "orange", "carrot");
+    addIngredients("grape", "banana", "kiwi");
+    displayJuice();
   }
   
   makeJuice("medium");
+
   
       
