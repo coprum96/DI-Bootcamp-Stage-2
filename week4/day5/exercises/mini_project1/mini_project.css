@@ -1,0 +1,87 @@
+body{
+background: #121212;
+background-image: url(circuit-pattern.png);
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    background: rgb(204, 249, 107);
+    background-image: url(card-pattern.png);
+
+}
+h1{
+    font-family: 'Monoton',cursive;
+    font-size: 35%;
+}
+
+
+#logo{
+    margin: auto 0;
+    margin-left: 1%;
+    font-size: 22px;
+}
+
+
+
+#searchBar{
+    margin: auto;
+    box-sizing: border-box;
+    padding-left: 1%;
+    width: 35%;
+    height: 50%;
+    border-radius: 30px;
+    font-size: 25px;
+    color: rgb(68, 17, 68);
+}
+
+#container{
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(136, 61, 184);
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 305px;
+    height: 380px;
+    margin: 0 auto 33px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.card:hover {
+    border: 10px dotted black;
+}
+
+img{
+    border: 2px solid rgb(83, 82, 82, 0.6);
+    border-radius: 50%;
+    width: 80%;
+    height: 65%;
+    margin: auto;
+    background-color: rgb(113, 32, 165);
+}
+img:hover{
+    border: 5px solid black;
+}
+
+p {
+    color: rgb(176, 255, 5);
+    font-size: 20px;
+    
+}
