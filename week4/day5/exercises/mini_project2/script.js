@@ -43,7 +43,7 @@ function startGame() {
 	document.querySelector(".endgame").style.display = "none";
 
   //when restarted choose again the user can choose the symbol
-  document.querySelector("#start").style.display = "block";
+  document.querySelector("#start").style.display = "inline";
 
   //if the user chooses the X sybol to play, the AI will be the opposite one
   buttonX.addEventListener('click', function () {

@@ -10,7 +10,7 @@
   
   @import url(https://fonts.googleapis.com/css?family=Akronim);
 
-  .fire {
+.fire {
     margin: 50px auto;
     width: 80%;
     max-width: 1000px;
@@ -34,10 +34,9 @@
   .Blazing {
     display: inline-block;
     margin: 0;
-  
-      color: rgb(255, 21, 21);
-      font-size: 100px;
-    line-height: 50px;
+    color: rgb(240, 23, 23);
+    font-size: 100px;
+    line-height: 60px;
     min-width: 50px;
     outline: none;
     vertical-align: middle;
@@ -92,23 +91,23 @@
   
   td {
     color: rgb(20, 180, 47);
-      border:  6px solid #333;
+      border:  12px dotted #333;
       height:  100px;
       width:  100px;
       text-align:  center;
       vertical-align:  middle;
-      font-family:  "Comic Sans MS", cursive, sans-serif;
-      font-size:  70px;
-      cursor: pointer;
+      font-family: 'Fredoka One', cursive;
+      font-size:  100px;
+
   }
   
   table {
     display: none;
-      border-collapse: collapse;
-      position: absolute;
-      left: 50%;
-      margin-left: -155px;
-      top: 50px;
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 50px;
     margin-top: 200px;
   
   }
