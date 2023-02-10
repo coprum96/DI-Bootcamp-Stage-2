@@ -22,7 +22,7 @@ const infoAboutMe = {
 };
 
 const infoAboutMascha = {
-    fullname: 'mascha',
+    fullname: 'masha',
     mass: 60,
     height: 170
 }
@@ -58,7 +58,20 @@ console.log('The person with the best BMI is: ' + bestBMI)
 
 
 
-function findAvg(gradesList) {
-    return gradesList;
-}
-findAvg()
+const calculateAvg = (gradesList) => {
+    let sum = 0;
+    for (let i = 0; i < gradesList.length; i++) {
+        sum += gradesList[i];
+    }
+    return sum / gradesList.length;
+};
+
+const findAvg = (gradesList) => {
+    let average = calculateAvg(gradesList);
+    console.log(average);
+    if (average > 65) {
+        console.log("You passed!");
+    } else {
+        console.log("You failed. Please repeat the course.");
+    }
+};
