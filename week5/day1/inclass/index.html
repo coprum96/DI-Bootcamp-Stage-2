@@ -1,0 +1,26 @@
+<!-- Exercise:
+Take a look at this URL : https://www.marvel.com/search?limit=9&query=IRONMAN
+Create a form in the HTML that will redirect the user to the URL above, the point is to fetch 10 pieces of information per page, for Thor
+You first need to validate the data:
+make sure the limit is equal to 10
+make sure the query is not empty, and contains at least 5 characters
+if not, you shouldn't submit the form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inclass</title>
+</head>
+<body>
+    <form action="https://www.marvel.com/search" method="get" id="info">
+        <p>Search query: <input type="text" id="query" name="query"></p>
+        <p>limit: <input type="number" id="limit" name="limit" value="10"></p>
+        <button type="submit">Search</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
