@@ -8,4 +8,6 @@ form.addEventListener('submit', (event) => {
     const p = document.createElement('p');
     p.textContent = jsonString;
     document.body.appendChild(p);
+    console.log(jsonString);
 });
+
