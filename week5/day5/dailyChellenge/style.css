@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: rgb(206,63,251);
+    background: radial-gradient(circle, rgba(206,63,251,1) 0%, rgba(3,111,105,0.8561799719887955) 65%);
+  }
+  
+  .container {
+    text-align: center; 
+    max-width: 600px; 
+  }
+  
