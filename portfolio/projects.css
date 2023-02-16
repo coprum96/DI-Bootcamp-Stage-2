@@ -1,0 +1,113 @@
+html,
+body,
+.wrapper,
+.content,
+.background {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.content,
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100e12;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.background__city {
+  height: 100%;
+  width: 100%;
+  background-image: url(http://jpboneyard.com/_img/hoops-city.png);
+  background-repeat: repeat-x;
+  background-size: 50%;
+  -webkit-animation: slide 1000s infinite linear;
+          animation: slide 4000s infinite linear;
+  margin-bottom: -40px;
+}
+.me {
+    width: 400px;
+    position: absolute;
+    bottom: 5px;
+    left: 65%;
+
+}
+
+.background__road {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+}
+.background__road:after {
+  content: "";
+  border-bottom: 2px dashed yellow;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-position: 0 calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: -50% calc(100% - 40px);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: -100% calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3em 2em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.journalist {
+  color: #F6F;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.Stanislav {
+  color: lightgrey ;
+  font-size: 1.3em;
+}
+.mechanic {
+  color: yellow;
+}
+
+p {
+  width: 100%;
+  max-width: 40em;
+  line-height: 1.4;
+  margin: 0 auto 1.5em;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

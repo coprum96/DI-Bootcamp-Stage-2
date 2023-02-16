@@ -1,0 +1,240 @@
+html,
+body,
+.wrapper,
+.content,
+.background {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.content,
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100e12;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.background__city {
+  height: 100%;
+  width: 100%;
+  background-image: url(http://jpboneyard.com/_img/hoops-city.png);
+  background-repeat: repeat-x;
+  background-size: 50%;
+  -webkit-animation: slide 5s infinite linear;
+          animation: slide 5s infinite linear;
+  margin-bottom: -40px;
+}
+.me {
+    width: 300px;
+    position: absolute;
+    bottom: 5px;
+    left: 25%;
+    -webkit-animation: driving 0.5s ease-in-out infinite normal;
+          animation: driving 0.5s ease-in-out infinite normal;
+}
+.background__car {
+  width: 300px;
+  position: absolute;
+  bottom: 25px;
+  left: 25%;
+  z-index: 1;
+  -webkit-animation: driving 0.5s ease-in-out infinite normal;
+          animation: driving 0.5s ease-in-out infinite normal;
+}
+
+
+.background__road {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+}
+.background__road:after {
+  content: "";
+  border-bottom: 2px dashed yellow;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-position: 0 calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: -50% calc(100% - 40px);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: -100% calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    background-position: -50% calc(100% - 40px);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    background-position: -100% calc(100% - 40px);
+    filter: hue-rotate(0deg);
+  }
+}
+@-webkit-keyframes driving {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes driving {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+ 
+  blockquote {
+    color: #1bbee7;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Titan One', cursive;
+    
+  }
+  blockquote:before {
+    content: "press";
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(172, 10, 10);
+    letter-spacing: 3px;
+    -webkit-animation: pulse 0.1s ease-in alternate infinite;
+            animation: pulse 0.5s ease-in alternate infinite;
+    text-shadow: none;
+  }
+  blockquote span {
+    display: block;
+    transform: translate3d(-50vw, 30vw, 0);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.65, 0.02, 0.23, 1);
+  }
+  blockquote span:nth-child(1) {
+    transition-delay: 0.1s;
+    z-index: 1;
+    color: rgb(172, 62, 62);
+  }
+  blockquote span:nth-child(2) {
+    transition-delay: 0.2s;
+    z-index: 2;
+    font-size: 70px;
+    color: aquamarine;
+  }
+  blockquote span:nth-child(3) {
+    transition-delay: 0.3s;
+    z-index: 3;
+  }
+  blockquote span:nth-child(4) {
+    transition-delay: 0.4s;
+    z-index: 4;
+    font-size: 50px;
+    color: chocolate;
+  }
+  blockquote span:nth-child(5) {
+    transition-delay: 0.5s;
+    z-index: 5;
+    color: rgb(12, 158, 78);
+  }
+  blockquote span:nth-child(6) {
+    transition-delay: 0.6s;
+    z-index: 6;
+    font-size: 50px;
+    color: rgb(57, 189, 189);
+  }
+  blockquote span:nth-child(7) {
+    transition-delay: 0.7s;
+    z-index: 7;
+    color: rgb(170, 52, 170);
+  }
+  blockquote.animate:before {
+    display: none;
+  }
+  blockquote.animate span {
+    opacity: 1;
+    position: relative;
+  }
+  blockquote.animate span:nth-child(1) {
+    transform: translate3d(20px, 0, 0);
+    transition-delay: 0.6s;
+  }
+  blockquote.animate span:nth-child(2) {
+    transform: translate3d(40px, 0, 0);
+    transition-delay: 0.5s;
+  }
+  blockquote.animate span:nth-child(3) {
+    transform: translate3d(60px, 0, 0);
+    transition-delay: 0.4s;
+  }
+  blockquote.animate span:nth-child(4) {
+    transform: translate3d(80px, 0, 0);
+    transition-delay: 0.3s;
+  }
+  blockquote.animate span:nth-child(5) {
+    transform: translate3d(100px, 0, 0);
+    transition-delay: 0.2s;
+  }
+  blockquote.animate span:nth-child(6) {
+    transform: translate3d(120px, 0, 0);
+    transition-delay: 0.1s;
+  }
+  blockquote.animate span:nth-child(7) {
+    transform: translate3d(140px, 0, 0);
+    transition-delay: 0s;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
