@@ -89,14 +89,11 @@ body,
 .journalist {
   color: #F6F;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 15px
 }
 .Stanislav {
-  color: lightgrey ;
-  font-size: 1.3em;
-}
-.mechanic {
-  color: yellow;
+  font-size: 17px;
+  color: rgb(175, 167, 55);
 }
 
 p {

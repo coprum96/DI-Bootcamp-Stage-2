@@ -12,3 +12,6 @@ body {
     max-width: 600px; 
   }
   
+  .currency {
+    font-size: 40px;
+  }
