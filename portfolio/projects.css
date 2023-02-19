@@ -15,6 +15,63 @@ body,
   left: 0;
 }
 
+.navbar{
+  height: 1%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  z-index: 1;
+  background: black;
+  opacity: 0.9;
+}
+
+li
+@media(max-width: 800px ) {
+  .navbar {
+      font-size: small;
+  }
+}
+
+
+.link-group{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.link a{
+  color: rgb(255, 255, 255);
+  border: 3px solid #8d8519;
+
+  opacity: 0.2;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  margin: 0 20px;
+  line-height: 80px;
+  transition: .5s;
+  font-size: 30px;
+}
+
+.link a:hover, .link.active a{
+  opacity: 1;
+}
+
+button { 
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  background: #8d8519;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  
+}
+
+
 .content {
   display: flex;
   justify-content: center;
@@ -74,37 +131,27 @@ body,
   }
 }
 
-.dialog {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding: 3em 2em;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.journalist {
-  color: #F6F;
-  font-weight: bold;
-  font-size: 15px
-}
-.Stanislav {
-  font-size: 17px;
-  color: rgb(175, 167, 55);
-}
 
-p {
-  width: 100%;
-  max-width: 40em;
-  line-height: 1.4;
-  margin: 0 auto 1.5em;
+.text {
+  display: block;
+  width: 50%;
+  padding: 30px;
+  font-size: 30px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  font-family: 'Titan One', cursive;
+  color: rgb(30, 126, 155)
 }
 
 @keyframes blink {
-  to {
-    visibility: hidden;
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
