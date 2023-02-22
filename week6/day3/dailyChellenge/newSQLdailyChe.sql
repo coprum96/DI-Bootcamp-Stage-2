@@ -115,5 +115,5 @@
 -- DELETE FROM student
 -- WHERE name = 'John';
 
-SELECT * FROM student
+-- SELECT * FROM student
 
