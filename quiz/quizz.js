@@ -240,7 +240,8 @@ console.log(total); // 42
 
 //      ```javascript
 const input = 'George Raymond Richard Martin';
-const initials = input.split(' ')
+const initials = input
+.split(' ')
 .map(name => name.charAt(0))
 .join('');
 console.log(initials); // "GRRM"
