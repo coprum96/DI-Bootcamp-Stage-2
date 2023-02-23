@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weekly Graph</title>
+    <link rel="stylesheet" href="weeklyGraph.css">
+</head>
+<body>
+    <div class="header">
+        <h1>weekly graph</h1>
+        <p id="demo"></p>
+      </div>
+      <div class="gantt-container">
+        <h3 class="h-mon">Mon</h3>
+        <h3 class="h-tue">Tue</h3>
+        <h3 class="h-wed">Wed</h3>
+        <h3 class="h-thu">Thu</h3>
+        <h3 class="h-fri">Fri</h3>
+        <h3 class="h-sat">Sat</h3>
+        <h3 class="h-sun">Sun</h3>
+      </div>
+      <form>
+        <label for="description">Task Description:</label>
+        <input type="text" id="description" name="description" required>
+        <label for="start">Start Date:</label>
+        <input type="date" id="start" name="start" required>
+        <label for="end">End Date:</label>
+        <input type="date" id="end" name="end" required>
+        <button type="submit">Add Task</button>
+      </form>
+
+
+    <script src="weeklyGraph.js"></script>
+</body>
+</html>
