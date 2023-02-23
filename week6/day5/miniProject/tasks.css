@@ -1,0 +1,34 @@
+input {
+    font-size: 44px;
+    box-sizing: border-box;
+    width:calc( 50% - 63px );
+    outline-color: transparent;
+    outline-style: none;
+}
+
+label {
+    padding: 10px;
+    font-size: 44px;
+}
+
+h1 {
+    font-size: 46px;
+    padding: 10px;
+    
+}
+
+li {
+    padding: 10px;
+    font-size: 18px; 
+}
+
+#clear-btn {
+    background-color: aquamarine;
+}
+
+button {
+    background-color: beige;
+    font-size: 20px;
+    display: inline;
+    margin: 10px;
+}

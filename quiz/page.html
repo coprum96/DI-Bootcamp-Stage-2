@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+<body>
+    <button id="add-paragraph-btn">Add Paragraph</button>
+    <div id="paragraphs-container"></div>
+
+    
+<script>
+    const addParagraphBtn = document.getElementById('add-paragraph-btn');
+const paragraphsContainer = document.getElementById('paragraphs-container');
+
+let paragraphsCount = 0;
+
+const addParagraph = () => {
+  const newParagraph = document.createElement('p');
+  newParagraph.textContent = (paragraphsCount + 1) % 3 === 0 ? "Hello" : "New Paragraph";
+  paragraphsContainer.appendChild(newParagraph);
+  paragraphsCount++;
+  newParagraph.addEventListener('mouseover', () => {
+    newParagraph.style.color = 'red';
+  });
+};
+
+addParagraphBtn.addEventListener('click', addParagraph);
+
+
+</script>
+</body>
+</html>

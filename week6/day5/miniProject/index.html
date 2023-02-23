@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do tasks</title>
     <link rel="stylesheet" href="style.css">
+ rel="stylesheet">
 </head>
 <body>
+  <div class="container">
     <h1>Add a new task</h1>
     <form>
       <label for="name">Name:</label>
@@ -22,8 +24,11 @@
       <label for="end">End date and time:</label>
       <input type="datetime-local" id="end" name="end" required><br><br>
       
-      <a href="tasks.html">Pay</a>
+      <label for="done">Done:</label>
+      <input type="text" id="done" name="done" required><br><br>
+      <a href="tasks.html">Add</a>
     </form>
-    <script src="app.js"></script>
+  </div>
+    <script src="script.js"></script>
   </body>
 </html>
