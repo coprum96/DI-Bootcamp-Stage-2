@@ -276,50 +276,55 @@ console.log(initials); // "GRRM"
 // 22. Use object destructuring to retrieve the value of the keys `france` and `spain`
 
 //     ```javascript
-//      const football = {
-//          type: "sport",
-//          clubs: {
-//            france : "Paris Saint-Germain",
-//            spain : "Atlético Madrid",
-//          }
-//        }  
+     const football = {
+         type: "sport",
+         clubs: {
+           france : "Paris Saint-Germain",
+           spain : "Atlético Madrid",
+         }
+       }  
+
+       const { france, spain } = football.clubs;
+
+      console.log(france, spain);
 //     ```
 
 // 23. Use object destructuring in the function to retrieve the value of the keys `france` and `spain`
 
 //     ```javascript
-//      function retrieveSports (//here) {
-//         const sentence = `My favorite football teams are ${franceTeam} and ${spainTeam}`;
-//         console.log(sentence);
-//      }
+     function retrieveSports ({ clubs: { france: franceTeam, spain: spainTeam } }) {
+        const sentence = `My favorite football teams are ${franceTeam} and ${spainTeam}`;
+        console.log(sentence);
+     }
 
-//      const football = {
-//          type: "sport",
-//          clubs: {
-//            france : "Paris Saint-Germain",
-//            spain : "Atlético Madrid",
-//          }
-//        }  
+     const football = {
+         type: "sport",
+         clubs: {
+           france : "Paris Saint-Germain",
+           spain : "Atlético Madrid",
+         }
+       }  
 
-//      retrieveSports(football)
+     retrieveSports(football)
 //     ```
 
 // 24. What will be printed in the console
 
 //     ```javascript
-//     class Item {
-//        constructor(nameProduct, priceProduct) { 
-//              this.name = nameProduct;
-//              this.price = priceProduct;
-//        }
+    class Item {
+       constructor(nameProduct, priceProduct) { 
+             this.name = nameProduct;
+             this.price = priceProduct;
+       }
 
-//        displayInfo () {
-//             console.log(this.name + " is for $ " + this.price)
-//        }
-//     } 
+       displayInfo () {
+            console.log(this.name + " is for $ " + this.price)
+       }
+    } 
 
-//     const cake = new Item("Chocolate Cake", 10);
-//     cake.displayInfo();
+    const cake = new Item("Chocolate Cake", 10);
+    cake.displayInfo();
+    // "Chocolate Cake" is for $ 10
 //     ```
 
 // #### Promises
@@ -327,53 +332,63 @@ console.log(initials); // "GRRM"
 // 25. What will be the output and why ? What will be the state of the promise ?
 
 //     ```javascript
-//     Promise.resolve('Success!')
-//       .then(data => {
-//         return data.toUpperCase()
-//       })
-//       .then(data => {
-//         console.log(data)
-//       })
+    Promise.resolve('Success!')
+      .then(data => {
+        return data.toUpperCase()
+      })
+      .then(data => {
+        console.log(data)
+      })
+      // SUCCESS!
+      // Promise('pending')
 //     ```
 
 // 26. What will be displayed by the following code, after 2 seconds?
 
 //     ```javascript
-//     const p = new Promise(function(resolve, reject) {
-//        setTimeout(function() {
-//           resolve("OK");
-//        }, 2000);
-//     });
+    const p = new Promise(function(resolve, reject) {
+       setTimeout(function() {
+          resolve("OK");
+       }, 2000);
+    });
     
-//     p.then(function(data) {
-//        console.log(data);
-//     });
+    p.then(function(data) {
+       console.log(data);
+    });
+    // promise (pending)
+    // 'OK'
 //     ```
 
 // 27. Consider the following `async` function and its output. What will be displayed to the console when calling the `test()` function? Explain the process
 
 //     ```javascript
-//     async function test() {
-//       let result = 'first!';
+    async function test() {
+      let result = 'first!';
       
-//       const promise = new Promise((resolve, reject) => {
-//         setTimeout(() => resolve('done!'), 1000);
-//       });
+      const promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve('done!'), 1000);
+      });
     
-//       result = await promise;
+      result = await promise;
     
-//       console.log(result);
-//     }
+      console.log(result);
+    }
     
-//     test();
+    test();
+    // promise
+    // done
 //     ```
 
 // 28. Use **async await**, and **the fetch API** to fetch a fact on cats and display it. Use this third party API :  `https://catfact.ninja/fact`
+
+SEE Button.html
 //     1. In the HTML file, create a button, everytime you click it you will add a random cat fact on the DOM 
 //     2. In the JS file, create 2 functions : one to fetch data from API, the other one to display it on the page using the DOM
 //     3. Make sure to use try and catch
 
 // 29. Use **async await**, and **the fetch API** to POST some data.
+
+SEE asyncAwait.html
 //     * Retrieve the data from a form (you can use new FormData), and send this data to this API : `https://jsonplaceholder.typicode.com/posts`. 
 //     * The server will send you back some dummy data that you will display on the DOM.
 //     * Use the documentation of the API : https://jsonplaceholder.typicode.com/guide/
