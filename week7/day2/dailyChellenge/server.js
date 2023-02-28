@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
+const { dir } = require('console');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -17,11 +18,11 @@ app.get('/aboutMe/:hobby', (req, res) => {
 });
 
 app.get('/pic', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'picture.html'));
+  res.sendFile(path.join(__dirname, 'public', 'pic.html'));
 });
 
 app.get('/form', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'form.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/formData', (req, res) => {

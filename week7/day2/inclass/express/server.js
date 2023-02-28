@@ -1,49 +1,77 @@
 const express = require('express');
 const cors = require('cors');
-const { products } = require('./dateBase/products.js');
+const {products} = require('./dateBase/products.js');
+const dotenv =  require('dotenv');
 
+dotenv.config();
+
+
+// console.log(products);
 const app = express();
 app.use(cors());
 
+app.use(express.urlencoded({extended:true}));
+app.use(express.json())
 
-app.use('/', express.static(__dirname + '/public'));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use('/',express.static(__dirname + '/public'))
 
-app.listen(5000, () => {
-  console.log('Server is running on port 5000');
-});
+app.listen(process.env.PORT () => {
+  console.log(`run on port ${process.env.PORT}`);
+})
 
-app.get('/api/product', (req, res) => {
-  res.json(products);
-});
+// CRUD
+// Read
+app.get('/api/products',(req,res)=>{
+  res.json(products)
+})
 
-app.get('/api/products/:id', (req, res) => {
-  const productId = req.params.id;
-  const product = products.find(item => item.id === productId);
-
-  if (!product) {
-    return res.status(404).json({ msg: 'Product not found' });
+app.get('/api/products/:id', (req,res)=>{
+  const product_id = req.params.id;
+  const product = products.find(item => {
+    return item.id == product_id
+  })
+  if(!product){
+    return res.status(404).json({msg:'not found'})
   }
+  res.json(product)
+})
 
-  res.json(product);
-});
+app.get('/api/search', (req,res)=>{
+  const name = req.query.q;
+  const filter_products = products.filter(item => {
+    return item.name.toLowerCase().includes(name.toLowerCase())
+  })
 
-app.get('/api/search', (req, res) => {
-  const name = req.query.q.toLowerCase();
-  const filteredProducts = products.filter(item =>
-    item.name.toLowerCase().includes(name)
-  );
-  res.json(filteredProducts);
-});
-
-app.post('/api/products', (req, res) => {
-  const new_product = {
-    id: products.length+1,
-    name: req.body.name,
-    price:req.body.price
+  if(filter_products.length === 0){
+    return res.status(200).json({msg:'no such product'})
   }
-  products.push(new_product)
-  res.status(200).json(products);
-// res.sendStatus(200);
-});
+  res.json(filter_products)
+})
+
+app.post('/api/products',(req,res)=>{
+   const new_product = {
+     id: products.length+1,
+     name: req.body.name,
+     price:req.body.price
+   }
+   products.push(new_product)
+   res.status(200).json(products);
+   // res.sendStatus(200);
+})
+
+
+app.put('/api/products/:id', (req, res) => {
+    const id = req.params.id;
+    const index = products.findIndex(item => item.id == id);
+
+    if(index === -1) {
+      return res.status(404).json({msg: 'Product is not found'})
+    }
+      const updatedProduct = {
+        id: products[index].id,
+        name: req.body.name,
+        price: req.body.price
+      }
+      products[index] = updatedProduct
+      req.status(200).json(products)
+})
