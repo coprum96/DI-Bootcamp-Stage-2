@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    text-align: center;
+    color: #222;
+    font-size: 24px; 
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    margin: 30px;
+  }
+  
+  .languages {
+    height: 400px;
+    width: 400px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgb(216, 177, 119);
+    border: 1px solid #222;
+    margin: 2px;
+  }
+  
+  .voteCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language button {
+    color: green;
+    font-weight: 300;
+    background-color: #0000;
+    border: none;
+    font-size: 40px;
+    outline: none;
+  }
