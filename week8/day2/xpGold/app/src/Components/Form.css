@@ -1,0 +1,9 @@
+.form {
+padding: 40px;
+border: 1px solid black;
+display: block;
+}
+
+label {
+    display: block;
+}
