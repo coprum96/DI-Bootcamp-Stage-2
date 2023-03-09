@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Color from './Components/Color';
+import Show from './Components/Show'
 
 class BuggyCounter extends Component {
   state = {
@@ -34,6 +36,7 @@ class ErrorBoundary extends Component {
     });
   }
 
+
   render() {
     return this.state.hasError ? (
       <div>
@@ -49,6 +52,7 @@ class ErrorBoundary extends Component {
     );
   }
 }
+
 
 function App() {
   return (
@@ -80,6 +84,9 @@ function App() {
       <hr />
       <p>This counter is not inside of boundary. So if crashes, all other components are deleted.</p>
       <BuggyCounter />
+      <hr/>
+      <Color />
+      <Show />
     </div>
   );
 }
