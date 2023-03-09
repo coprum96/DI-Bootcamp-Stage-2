@@ -1,0 +1,34 @@
+/* Todo List */
+
+.todos {
+    margin-top: 30px;
+  }
+  
+  .todos .collection-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .todos .collection-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .todos .collection-item span {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .todos .center {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #757575;
+  }
