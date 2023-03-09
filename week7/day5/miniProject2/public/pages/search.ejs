@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body>
+  <%- include('../partials/header') %>
+  <div class="container">
+    <h1 class="my-4">Search Posts</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="/search" method="GET">
+          <div class="form-group">
+            <label for="titleInput">Search by Title:</label>
+            <input type="text" class="form-control" id="titleInput" name="title" placeholder="Enter title">
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <form action="/search" method="GET">
+          <div class="form-group">
+            <label for="categorySelect">Search by Category:</label>
+            <select class="form-control" id="categorySelect" name="category">
+              <option value="">Select category</option>
+              <option value="Animals">Animals</option>
+              <option value="Food">Food</option>
+              <option value="Science">Science</option>
+              <option value="History">History</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <%- include('../partials/posts', {posts: posts}) %>
+  </div>
+<%- include('../partials/footer') %>
+
+</body>
+</html>

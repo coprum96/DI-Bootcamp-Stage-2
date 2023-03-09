@@ -14,8 +14,8 @@ class App extends Component {
   };
 
   handleClick = (id) => {
-    this.handleScore(id);
     this.shuffleArray();
+    this.handleScore(id);
   };
 
   handleScore = (id) => {

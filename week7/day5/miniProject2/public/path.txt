@@ -1,0 +1,9 @@
+public/
+├── pages/
+│   ├── index.ejs
+│   └── search.ejs
+└── partials/
+    ├── footer.ejs
+    ├── head.ejs
+    ├── header.ejs
+    └── posts.ejs
