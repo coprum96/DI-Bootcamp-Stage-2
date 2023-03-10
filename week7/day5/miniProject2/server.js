@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const rssParser = require('rss-parser');
-const port = 3000;
+const port = 3001;
 let Parser = require('rss-parser');
 let parser = new Parser();
 
@@ -31,7 +31,7 @@ app.set('view engine', 'ejs');
 app.get('/', async (req, res) => {
   try {
     const parser = new rssParser();
-    const feed = await parser.parseURL('https://www.thefactsite.com/feed/');
+    const feed = await parser.parseURL('https://www.thefactsite.com/1000-interesting-facts/');
     res.render('index', { facts: feed.items });
   } catch (err) {
     console.error('Failed to retrieve RSS feed:', err);
@@ -48,7 +48,7 @@ app.get('/search', (req, res) => {
 app.post('/search/title', async (req, res) => {
   try {
     const parser = new rssParser();
-    const feed = await parser.parseURL('https://www.thefactsite.com/feed/');
+    const feed = await parser.parseURL('https://www.thefactsite.com/1000-interesting-facts/');
     const title = req.body.title;
     const matchingPosts = feed.items.filter(post => post.title.toLowerCase().includes(title.toLowerCase()));
     res.render('search', { posts: matchingPosts });
@@ -62,7 +62,7 @@ app.post('/search/title', async (req, res) => {
 app.post('/search/category', async (req, res) => {
   try {
     const parser = new rssParser();
-    const feed = await parser.parseURL('https://www.thefactsite.com/feed/');
+    const feed = await parser.parseURL('https://www.thefactsite.com/1000-interesting-facts/');
     const category = req.body.category;
     const matchingPosts = feed.items.filter(post => post.categories.includes(category));
     res.render('search', { posts: matchingPosts });
