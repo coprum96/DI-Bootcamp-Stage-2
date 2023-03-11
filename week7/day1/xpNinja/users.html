@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users</title>
+</head>
+<body>
+    <h1>Add Users</h1>
+    <form>
+      <label>
+        Name:
+        <input type="text" name="name" id="name">
+      </label>
+      <br>
+      <label>
+        Street Address:
+        <input type="text" name="street" id="street">
+      </label>
+      <br>
+      <label>
+        Country:
+        <input type="text" name="country" id="country">
+      </label>
+      <br>
+      <button type="button" onclick="addUser()">Add User</button>
+    </form>
+    <hr>
+    <h2>Users</h2>
+    <ul id="user-list"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/faker/3.1.0/faker.min.js"></script>
+</body>
+</html>
