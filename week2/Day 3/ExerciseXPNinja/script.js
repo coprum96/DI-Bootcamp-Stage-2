@@ -57,7 +57,7 @@ console.log('The person with the best BMI is: ' + bestBMI)
 // Hint One function must call the other.
 
 
-
+console.log('the exercise 2')
 const calculateAvg = (gradesList) => {
     let sum = 0;
     for (let i = 0; i < gradesList.length; i++) {
