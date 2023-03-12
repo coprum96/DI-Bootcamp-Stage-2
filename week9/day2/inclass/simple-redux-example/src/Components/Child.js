@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { changePropTwo } from '../redux/actions';
 
 const Child = (props) => {
   return (
@@ -17,5 +18,11 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Child);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changePropB: (e) => dispatch(changePropTwo(e.target.value))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Child);
 

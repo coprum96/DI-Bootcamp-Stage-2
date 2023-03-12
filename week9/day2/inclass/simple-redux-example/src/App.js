@@ -4,6 +4,7 @@ import Child2 from './Components/Child2';
 import { connect } from 'react-redux';
 import './App.css'
 import { changePropOne } from './redux/actions';
+import ChangeByClick from './Components/ChangeByClick';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,6 +32,9 @@ class App extends React.Component {
           <div>{this.props.b}</div>
           <Child prop_one={this.state.property_one} />
           <Child2 hello={this.state.property_two} />
+          <div>{this.props.b}</div>
+          <input onChange={this.props.changePropB} type='text'></input>
+          <ChangeByClick />
         </header>
       </div>
     );

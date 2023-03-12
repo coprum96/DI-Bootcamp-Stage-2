@@ -4,3 +4,10 @@ export const changePropOne = (value) => {
         payload: value
     }
 }
+
+export const changePropTwo = (value) => {
+    return{
+        type: 'PROP_TWO',
+        payload: value
+    }
+}
