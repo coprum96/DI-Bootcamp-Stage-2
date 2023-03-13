@@ -68,4 +68,13 @@ function biggestNumberInArray(a){
   console.log(biggestNumberInArray(['a', 3, 4, 2])); // should return 4
   console.log(biggestNumberInArray([])); // should return null
   
+//   Write a JS function that takes an array and returns a new array with only unique elements.
+
+const newList = (arr) => {
+    const unique = arr.filter((item, index, array) => {
+      return array.indexOf(item) === index;
+    });
+    return unique;
+  }
   
+  console.log(newList([1,2,3,3,3,3,4,5]));
