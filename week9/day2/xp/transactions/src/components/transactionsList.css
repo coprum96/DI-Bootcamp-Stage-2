@@ -1,0 +1,29 @@
+body {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  table {
+    background-color: #444;
+    color: #fff;
+    font-size: larger;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #333;
+  }
+  
+  button {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
