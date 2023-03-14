@@ -1,5 +1,5 @@
 const initialState = {
-    age: 20
+    age: 20,
   };
   
   const reducer = (state = initialState, action) => {
@@ -14,9 +14,14 @@ const initialState = {
           ...state,
           age: state.age - action.value
         };
+      case "LOADING":
+        return {
+          ...state,
+        };
       default:
         return state;
     }
   };
   
   export default reducer;
+  

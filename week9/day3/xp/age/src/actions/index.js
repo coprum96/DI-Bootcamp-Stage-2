@@ -9,10 +9,11 @@ export const loading = () => {
   };
   
   export const ageUp = val => {
-    return dispach => {
-      dispach(loading());
+    return dispatch => {
+      console.log("Dispatching loading action");
+      dispatch(loading());
       setTimeout(() => {
-        dispach(ageUpAsnc(val));
+        dispatch(ageUpAsnc(val));
       }, 5000);
     };
   };

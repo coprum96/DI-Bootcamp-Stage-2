@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import logo from "./logo.svg";
 import {ageUp, ageDown} from './../actions/index'
 
 class Age extends React.Component {
@@ -15,7 +16,7 @@ class Age extends React.Component {
     return (
       <>
         <div>Age</div>
-        <p>{this.props.loading}</p>
+        {this.props.loading && <img src={logo} />}
         your age: <span>{this.props.age}</span>
         <button onClick={this.props.onAgeUp}>Age UP</button>
         <button onClick={this.props.onAgeDown}>Age Down</button>
