@@ -1,10 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import { PhotoContext } from "../context/PhotoContext";
-import Gallery from "./Gallery";
-import Loader from "./Loader";
+import { PhotoContext } from "../images/photo";
+import Gallery from "./Gallary";
 
 const Container = ({ searchTerm }) => {
-  const { images, loading, runSearch } = useContext(PhotoContext);
+  const { images, runSearch } = useContext(PhotoContext);
   useEffect(() => {
     runSearch(searchTerm);
     // eslint-disable-next-line
@@ -12,7 +11,7 @@ const Container = ({ searchTerm }) => {
 
   return (
     <div className="container">
-      {loading ? <Loader /> : <Gallery data={images} />}
+      {<Gallery data={images} />}
     </div>
   );
 };
