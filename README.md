@@ -1,7 +1,7 @@
 # My Bootcamp Experience
 I recently completed a bootcamp where I learned several new technologies and tools for web development. Some of the key skills that I acquired include:
 
-#  JavaScript: a versatile programming language used for both front-end and back-end development.
+## JavaScript: a versatile programming language used for both front-end and back-end development.
 #  TypeScript: a typed superset of JavaScript that adds static type checking and other features to improve code maintainability and scalability.
 #  HTML5 and CSS3: the core building blocks of the web, used for creating the structure and style of web pages.
 #  Bootstrap: a popular front-end framework for building responsive, mobile-first web applications.
